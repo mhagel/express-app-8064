@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_PREFIX: registry.cloudzilla.ai/lens-local-mark-project-9d2373e7b5/
+  IMAGE_PREFIX: registry.cloudzilla.ai/lens-local-mark-project-87eba3cf31/
 
 jobs:
   cz-build-push:
@@ -22,7 +22,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: https://registry.cloudzilla.ai/
-          username: 'robot$lens-local-mark-project-9d2373e7b5+imageuser'
+          username: 'robot$lens-local-mark-project-87eba3cf31+imageuser'
           password: '${{ secrets.DOCKER_PASSWORD }}'
 
       - name: downcase REPO
